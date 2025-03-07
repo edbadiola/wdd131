@@ -1,4 +1,149 @@
+:root {
+    --primary-color: #d0d5da;
+    --secondary-color: #0c5997;
+    --accent-color: #00e1ff;
+    --background-color: #cde6f0;
+ 
 
-.header, h2 {
-    font-family: "Gloria Hallelujah", cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: medium;
+    background-color: var(--background-color);
+}
+
+header {
+    margin: auto;
+    background-color: var(--secondary-color);
+
+
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+    font-weight: 250;
+    padding: 50px 50px;
+}
+
+h2, h3 {
+    font-weight: 500;
+    color: #3d3d3d;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #1f89c7;
+    
+}
+
+nav li {
+    display: inline;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 15px 15px;
+    display: block;
+    
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: var(--accent-color);
+}
+
+
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 2000px;
+    margin: 20px auto;
+    border-radius: 25px;
+    background-color: var(--background-color);
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: 0 0px 2px;
+    text-align: center;
+    
+}
+
+footer {
+    grid-area: footer;
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid var(--primary-color);
+}
+
+#lastModified{
+    color: var(--accent-color)
+}
+
+footer #currentyear {
+    font-weight: bold;
+}
+
+.self-info {
+    display: flex;
+    align-items: center;
+    gap 20px
+}
+
+.city-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+
+}
+
+#profile {
+    max-width: 200px;
+    padding: 20px;
+    border: 5px;
+}
+
+
+#flag {
+    max-width: 300px;
+    padding: 20px;
+}
+
+ul {
+    margin-top: 25px;
+    list-style-type: none;
+    font-size: 1.2rem;
+    
+    
+}
+
+li {
+    margin-bottom: 10px;
+    
 }
