@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description"
+        content="Media query learning activity example page. This is a temple gallery page that showcases web development skills toggling in mobile and large view with basic JavaScript addition." />
+    <meta name="author" content="Edward Kenneth Badiola" />
+
+
+    <link rel="stylesheet" href="temples.css">
+    <link rel="stylesheet" href="temples-large.css" media="(min-width: 768px)">
+    <script defer src="temples.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu">☰</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        <section class="gallery">
+            <figure><img src="placeholder.jpg" alt="Temple"><figcaption>Temple 1</figcaption></figure>
+            <figure><img src="placeholder.jpg" alt="Temple"><figcaption>Temple 2</figcaption></figure>
+            <figure><img src="placeholder.jpg" alt="Temple"><figcaption>Temple 3</figcaption></figure>
+            <figure><img src="placeholder.jpg" alt="Temple"><figcaption>Temple 4</figcaption></figure>
+            <figure><img src="placeholder.jpg" alt="Temple"><figcaption>Temple 5</figcaption></figure>
+            <figure><img src="placeholder.jpg" alt="Temple"><figcaption>Temple 6</figcaption></figure>
+            <figure><img src="placeholder.jpg" alt="Temple"><figcaption>Temple 7</figcaption></figure>
+            <figure><img src="placeholder.jpg" alt="Temple"><figcaption>Temple 8</figcaption></figure>
+            <figure><img src="placeholder.jpg" alt="Temple"><figcaption>Temple 9</figcaption></figure>
+        </section>
+    </main>
+    <footer>
+        <p>
+            ©<span id="currentYear"></span> - Edward Kenneth Badiola - 🌴Borongan - Philippines
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

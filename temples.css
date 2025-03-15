@@ -1,0 +1,124 @@
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    /* Title on left, nav toggle on right */
+    align-items: center;
+    padding: 1rem;
+    background-color: #612c63;
+    color: white;
+}
+
+/* Hamburger Button */
+#menu {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Navigation - Hidden by Default in Mobile */
+nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: #612c63;
+    width: 200px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+nav li {
+    padding: 30px;
+
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: rgb(55, 19, 56)
+}
+
+/* Open Menu */
+nav.open {
+    display: block;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #612c63;
+    margin-top: 40px;
+}
+
+
+/* Center the Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Single column for mobile */
+    gap: 15px;
+    justify-content: center;
+    /* Centers grid items horizontally */
+    align-items: center;
+    /* Aligns items properly */
+    width: 100%;
+    max-width: 1400px;
+    /* Limits gallery width */
+    margin: 0 auto;
+    /* Ensures it is centered */
+    margin-bottom: 30px;
+}
+
+/* Ensure Figures are Centered */
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+figcaption {
+    margin-top: 15px;
+}
+
+
+figure img {
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    background: #612c63;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  
+}

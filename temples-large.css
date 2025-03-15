@@ -1,0 +1,32 @@
+@media (min-width: 768px) {
+
+    /* Title & Nav Side by Side */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+
+    nav {
+        display: flex !important;
+        position: static;
+        background: none;
+        width: auto;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 20px;
+    }
+
+    /* Remove Mobile-Only Styling */
+    #menu {
+        display: none;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
