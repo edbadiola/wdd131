@@ -1,0 +1,38 @@
+/* General Styling */
+:root {
+    --primary-color: #910000;
+    --text-color: #333;
+    --bg-color: #f9f9f9;
+}
+
+
+.data h2,
+.weather h2 {
+    color: var(--primary-color);
+    /* Set the color of the h2 text */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: .6;
+    background-color: var(--bg-color);
+}
+
+p {
+    font-size: 15px;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px 0;
+}
+
+footer {
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: white;
+}

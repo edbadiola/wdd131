@@ -1,0 +1,21 @@
+/* Small View (Mobile) */
+.hero {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.data,
+.weather {
+    width: 90%;
+    margin: 10px auto;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
