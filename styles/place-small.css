@@ -1,21 +1,31 @@
-/* Small View (Mobile) */
-.hero {
-    width: 100%;
-    height: auto;
-    text-align: center;
-}
+@media screen and (max-width: 768px) {
+    .hero {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
 
-.hero img {
-    width: 100%;
-    height: auto;
-}
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
 
-.data,
-.weather {
-    width: 90%;
-    margin: 10px auto;
-    padding: 15px;
-    border: 1px solid #ddd;
-    background-color: white;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    .data,
+    .weather {
+        width: 90%;
+        margin: 10px auto;
+        padding: 15px;
+        border: 1px solid #ddd;
+        background-color: white;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* SVG Weather Icon for Mobile View */
+    .weather-icon {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background: url("../images/weather-icon.svg") no-repeat center;
+        background-size: contain;
+    }
 }
