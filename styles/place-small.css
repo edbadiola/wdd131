@@ -1,31 +1,35 @@
-@media screen and (max-width: 768px) {
-    .hero {
-        width: 100%;
-        height: auto;
-        text-align: center;
-    }
 
-    .hero img {
-        width: 100%;
-        height: auto;
-    }
 
-    .data,
-    .weather {
-        width: 90%;
-        margin: 10px auto;
-        padding: 15px;
-        border: 1px solid #ddd;
-        background-color: white;
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    }
+body {
+    font-size: 16px;
+    background-color: #f9f9f9;
+    padding: 10px;
+}
 
-    /* SVG Weather Icon for Mobile View */
-    .weather-icon {
-        display: inline-block;
-        width: 24px;
-        height: 24px;
-        background: url("../images/weather-icon.svg") no-repeat center;
-        background-size: contain;
-    }
+.hero img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.weather-icon img {
+    display: block;
+    /* Show SVG in mobile */
+    width: 40px;
+    height: 40px;
+}
+
+/* Hide the emoji in mobile view */
+.weather-icon::after {
+    content: "";
+}
+
+header,
+footer {
+    text-align: center;
+    padding: 15px;
+}
+
+main {
+    padding: 10px;
 }

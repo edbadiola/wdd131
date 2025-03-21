@@ -4,24 +4,12 @@
     --bg-color: #f9f9f9;
 }
 
-.data h2,
-.weather h2 {
-    color: var(--primary-color);
-    font-size: 30px;
-    font-weight: 350;
-}
-
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
-    line-height: 1;
     background-color: var(--bg-color);
-}
-
-p {
-    font-size: 14px;
 }
 
 header {
@@ -34,4 +22,17 @@ footer {
     padding: 10px;
     background-color: var(--primary-color);
     color: white;
+}
+
+/* Weather Icon Styling */
+.weather-icon img {
+    width: 40px;
+    height: 40px;
+    display: none;
+}
+
+.weather-icon::after {
+    content: " ⛅";
+    /* Default emoji for wide screens */
+    font-size: 24px;
 }

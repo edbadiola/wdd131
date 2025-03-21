@@ -44,9 +44,9 @@
         box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
     }
 
-    /* Weather Icon as Emoji */
-    .weather-icon::before {
-        content: "⛅";
-        font-size: 1.2em;
+    .weather-icon::after {
+        content: " ⛅";
+        /* Add emoticon for desktop */
+        font-size: 24px;
     }
 }
