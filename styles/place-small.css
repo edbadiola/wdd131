@@ -3,25 +3,25 @@
 body {
     font-size: 16px;
     background-color: #f9f9f9;
-    padding: 10px;
+    
 }
 
 .hero img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    
 }
 
 .weather-icon img {
     display: block;
     /* Show SVG in mobile */
-    width: 40px;
+    width: px;
     height: 40px;
 }
 
 /* Hide the emoji in mobile view */
 .weather-icon::after {
-    content: "";
+    content: " ";
 }
 
 header,
