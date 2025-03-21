@@ -6,11 +6,13 @@
 }
 
 
+/* For h2 inside the .data or .weather box */
 .data h2,
 .weather h2 {
     color: var(--primary-color);
-    /* Set the color of the h2 text */
+    
 }
+
 
 body {
     font-family: Arial, sans-serif;
