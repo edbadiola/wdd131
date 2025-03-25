@@ -14,21 +14,21 @@ const temples = [
         location: "Surrey, England",
         dedicated: "1958, September, 7-9",
         area: 42652,
-        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/london-england-temple/london-england-temple-4243-main.jpg"
+        imageUrl: "images/ftemple (1).webp"
     },
     {
         templeName: "Manila Philippines",
         location: "Quezon City, Manila",
         dedicated: "1984, September, 25-27",
         area: 26683,
-        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/_temp/029-Manila-Philippines-Temple.jpg"
+        imageUrl: "images/ftemple (2).webp"
     },
     {
         templeName: "Paris France",
         location: "Le Chesnay, Paris",
         dedicated: "2017, May, 21",
         area: 44175,
-        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/paris-france-temple/paris-france-temple-2056-main.jpg"
+        imageUrl: "images/ftemple (3).webp"
     },
     {
         templeName: "Aba Nigeria",
