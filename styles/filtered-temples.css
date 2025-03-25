@@ -2,7 +2,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
-    color: #0c0c0c;
+    color: #000000;
     margin: 0;
     padding: 0;
 }
@@ -128,7 +128,7 @@ main h2 {
 .temple-details p {
     margin: 5px 0;
     font-size: 14px;
-    color: #666;
+    color: #181818;
 }
 
 /* Footer */
