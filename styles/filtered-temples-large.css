@@ -1,0 +1,32 @@
+@media (min-width: 768px) {
+
+    /* Header and Nav */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    nav {
+        display: flex !important;
+        position: static;
+        background: none;
+        width: auto;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 20px;
+    }
+
+    /* Hide mobile menu button */
+    #menu {
+        display: none;
+    }
+
+    /* Responsive Gallery */
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

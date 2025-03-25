@@ -1,0 +1,137 @@
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #612c63;
+    color: white;
+}
+
+/* Hamburger Button */
+#menu {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Navigation - Hidden by Default */
+nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: #612c63;
+    width: 200px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    padding: 30px;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: rgb(55, 19, 56);
+}
+
+/* Open Menu */
+nav.open {
+    display: block;
+}
+
+main h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #612c63;
+    margin-top: 40px;
+}
+
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+/* Temple Cards */
+.temple-card {
+    background: #ffffff;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(22, 0, 21, 0.2);
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.temple-card img {
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    object-fit: cover;
+    opacity: 0;
+    /* Start invisible */
+    animation: fadeIn 1.5s ease-in-out forwards;
+    /* Smooth fade-in */
+}
+
+.temple-details {
+    margin-top: 10px;
+}
+
+.temple-details h3 {
+    color: #612c63;
+}
+
+.temple-details p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background: #612c63;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
