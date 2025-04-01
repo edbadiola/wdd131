@@ -1,0 +1,123 @@
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 20px;
+        flex-direction: row;
+        text-align: center;
+        position: relative;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin: 0 auto;
+        text-align: center;
+        flex-grow: 1;
+        
+    }
+
+    body {
+        font-size: .9rem;
+        color: rgb(36, 36, 36);
+    }
+
+
+
+    /* Show hamburger in mobile view */
+    .hamburger {
+        position: absolute;
+        right: 20px;
+        /* Keeps it on the right */
+        top: 50%;
+        transform: translateY(-50%);
+        display: block;
+        /* Ensures it's visible */
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        list-style: none;
+        padding: 15px 0;
+        background-color: var(--primary-color);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 0 0 10px 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        padding: 12px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .nav-links li:last-child {
+        border-bottom: none;
+    }
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 1.1rem;
+        display: block;
+        padding: 10px;
+        transition: background 0.3s ease;
+    }
+
+    .nav-links a:hover {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 5px;
+    }
+
+    #home {
+        flex-direction: column;
+        text-align: center;
+        padding: px;
+    }
+
+    .profile {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .profile-img img {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 5px;
+    }
+
+    .profile-quote {
+        text-align: center;
+        font-size: 1.2rem;
+        line-height: 1.3;
+        margin-top: 5px;
+    }
+
+    #about,
+    #products,
+    #services,
+    #contact {
+        padding: 20px 30px;
+    }
+    
+    
+
+    footer {
+        padding: 20px;
+    }
+
+    footer p {
+        font-size: .8rem;
+    }
+}
