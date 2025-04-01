@@ -70,17 +70,15 @@ header nav ul li a {
 .profile {
     display: flex;
     justify-content: flex-start;
-    /* Align items to start */
     align-items: center;
     gap: 30px;
-    /* Adjust space between image and quote */
     max-width: 1000px;
     width: 100%;
 }
 
 .profile-img {
     flex-shrink: 0;
-    /* Prevent shrinking of image */
+    
 }
 
 .profile-img img {
@@ -90,7 +88,21 @@ header nav ul li a {
     /* Keep the circular image */
     object-fit: cover;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
-}
+    animation: fadeIn 1s ease-out forwards;
+      
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+    
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
 
 .profile-quote {
     font-size: 1.7rem;
