@@ -44,7 +44,7 @@ label[for="features"] {
 .optional {
     font-weight: normal;
     font-size: 0.9em;
-    color: #777;
+    color: #333333;
 }
 
 /* Inputs */
@@ -95,14 +95,14 @@ input[type="submit"]:hover {
 }
 
 .star {
-    color: #ccc;
+    color: #646464;
     transition: color 0.2s ease;
     
 }
 
 .star.hover,
 .star.selected {
-    color: rgb(211, 176, 0);
+    color: rgb(202, 169, 4);
 }
 
 /* Checkboxes */
@@ -130,5 +130,5 @@ footer {
     margin-top: 2rem;
     padding: 1rem;
     font-size: 0.9em;
-    color: #666;
+    color: #050505;
 }
