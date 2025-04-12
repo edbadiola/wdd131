@@ -1,5 +1,5 @@
 :root {
-    --primary-color: rgb(68, 63, 63);
+    --primary-color: #3a3a3a;
     /* Green */
     --secondary-color: #e24747;
     /* Red */
@@ -48,6 +48,10 @@ header nav ul li a {
     text-decoration: none;
     font-weight: 700;
     font-size: large;
+}
+
+header nav ul li a:hover {
+    color: var(--secondary-color);
 }
 
 .hamburger {

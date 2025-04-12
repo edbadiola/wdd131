@@ -1,0 +1,213 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Root Variables */
+:root {
+    --primary-color: #3a3a3a;
+    /* Dark Gray */
+    --secondary-color: #e24747;
+    /* Red */
+    --text-color: #3b3b3b;
+    --font-family: 'Roboto', sans-serif;
+}
+
+/* Body Styling */
+body {
+    font-family: var(--font-family);
+    background-color: #f4f4f4;
+    color: var(--text-color);
+    
+   
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 50px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 100;
+    color: whitesmoke;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: var(--secondary-color);
+}
+
+header .hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Main Section */
+main {
+    padding: 40px 10px;
+}
+
+h1.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+}
+
+section h2, p{
+    text-align: center;
+    padding: .3rem;
+}
+
+section h2{
+    font-size: 2rem;
+}
+
+
+.product-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 40px 20px;
+    align-items: center;
+    font-size: 1.3rem;
+    
+}
+
+.product-grid p{
+    color: #525252;
+    text-align: justify;
+    margin-left: 3rem;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    max-width: 1300px;
+    padding: 30px;
+    background-color: transparent;
+    /* invisible card */
+    border: none;
+    box-shadow: none;
+    gap: 30px;
+}
+
+.product-card img {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    /* do not crop the image */
+    border-radius: 12px;
+}
+
+
+
+
+/* Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 5px;
+}
+
+footer #currentYear {
+    font-weight: bold;
+}
+
+footer #lastModified {
+    font-style: italic;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .product-grid {
+        padding: 0 20px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+}

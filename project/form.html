@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health Consultation - Barangay Wellness Hub</title>
+    <link rel="stylesheet" href="styles/form.css" />
+    <link rel="stylesheet" href="styles/styles-mobile.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header from siteplan -->
+    <header>
+        <div class="logo">
+            <h1>Barangay Wellness Hub</h1>
+        </div>
+        <nav>
+            <div class="hamburger" id="hamburger">&#9776;</div>
+            <ul id="nav-menu">
+                <li><a href="siteplan.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="form.html" class="active">Health Consultation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main class="form-container">
+        <h1>Health Consultation Form</h1>
+        <form action="form-consultation.html" method="get">
+            <!-- Full Name -->
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" required />
+
+            <!-- Date of Birth -->
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required />
+
+            <!-- Gender -->
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required>
+                <option value="" disabled selected>Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <!-- Contact Information -->
+            <label for="contactNumber">Contact Number</label>
+            <input type="tel" id="contactNumber" name="contactNumber" required />
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required />
+
+            <!-- Health Issues -->
+            <fieldset>
+                <legend>Do you have any of the following health conditions? (Check all that apply)</legend>
+                <label><input type="checkbox" name="healthConditions" value="Hypertension" /> Hypertension</label>
+                <label><input type="checkbox" name="healthConditions" value="Diabetes" /> Diabetes</label>
+                <label><input type="checkbox" name="healthConditions" value="Asthma" /> Asthma</label>
+                <label><input type="checkbox" name="healthConditions" value="Heart Disease" /> Heart Disease</label>
+                <label><input type="checkbox" name="healthConditions" value="Chronic Pain" /> Chronic Pain</label>
+                <label><input type="checkbox" name="healthConditions" value="Other" /> Other</label>
+            </fieldset>
+
+            <!-- Current Symptoms -->
+            <label for="currentSymptoms">Current Symptoms</label>
+            <textarea id="currentSymptoms" name="currentSymptoms" rows="4"
+                placeholder="Describe any current symptoms you are experiencing..." required></textarea>
+
+            <!-- Preferred Consultation Mode -->
+            <label for="consultationMode">Preferred Consultation Mode</label>
+            <select id="consultationMode" name="consultationMode" required>
+                <option value="" disabled selected>Select Mode</option>
+                <option value="In-person">In-person</option>
+                <option value="Online">Online</option>
+            </select>
+
+            <!-- Consultation Date -->
+            <label for="preferredDate">Preferred Consultation Date</label>
+            <input type="date" id="preferredDate" name="preferredDate" required />
+
+            <!-- Additional Information -->
+            <label for="additionalInfo">Additional Information</label>
+            <textarea id="additionalInfo" name="additionalInfo" rows="4"
+                placeholder="Any other details you would like to share..." class="optional"></textarea>
+
+            <!-- Submit -->
+            <input type="submit" value="Request Consultation" />
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>©<span id="currentYear"></span> - Edward Kenneth Badiola - 🌴Borongan - Philippines</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/form.js"></script>
+</body>
+
+</html>
